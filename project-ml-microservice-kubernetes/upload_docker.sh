@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=tam892007/ml-prediction
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login
+docker tag ml-prediction "$dockerpath:latest"
 
 # Step 3:
 # Push image to a docker repository
+docker push tam892007/ml-prediction:latest
