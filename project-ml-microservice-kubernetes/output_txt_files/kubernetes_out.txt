@@ -1,4 +1,13 @@
+# =============== kubernetes output =============================
 NAME                            READY   STATUS    RESTARTS   AGE
 ml-prediction-88dd9c7c8-bln4j   1/1     Running   0          10m
 Forwarding from 0.0.0.0:8000 -> 80
 Handling connection for 8000
+
+# =============== make_predictions.sh output ====================
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
